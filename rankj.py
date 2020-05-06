@@ -1,25 +1,24 @@
 import sys
 
-sys.stdout.reconfigure(encoding='utf-8')
-
 results = {}
 
-"""
 if sys.argv[1] == "nsp":
     in_filename = "results\\WoS_nsp_final.txt"
+    out_filename = "results\\nsp_out.csv"
+    print(in_filename)
+    print(out_filename)
 elif sys.argv[1] == "newTaxa":
     in_filename = "results\\WoS_newTaxa_final.txt"
+    out_filename = "results\\newTaxa_out.csv"
+    print(in_filename)
+    print(out_filename)
 elif sys.argv[1] == "nomenActs":
     in_filename = "results\\WoS_nomenActs_final.txt"
+    out_filename = "results\\nomenActs_out.csv"
+    print(in_filename)
+    print(out_filename)
 else:
     print("Please, specify a correct parameter.")
-"""
-
-in_filename = "results\\WoS_nsp_final.txt"
-
-#out_filename = "results\\" + sys.argv[1] + "_out.csv"
-
-out_filename = "results\\" + "nsp" + "_out.csv"
 
 with open(in_filename, encoding='utf-8') as in_file, open(out_filename, 'w') as out_file:
     for line in in_file:
