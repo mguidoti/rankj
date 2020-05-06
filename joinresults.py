@@ -3,7 +3,7 @@ import os
 
 path = sys.argv[1]
 
-out_filename = "results\\WoS_" + sys.argv[2] + "_final.txt"
+out_filename = "wos\\2020-05\\WoS_" + sys.argv[2] + "_final.txt"
 
 file_list = os.listdir(path)
 
