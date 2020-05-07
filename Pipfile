@@ -11,6 +11,7 @@ jupyter = "*"
 pandas = "*"
 matplotlib = "*"
 pylint = "*"
+openpyxl = "*"
 
 [requires]
 python_version = "3.8"
